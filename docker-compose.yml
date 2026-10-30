@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    env_file: .env
+    environment:
+      OLLAMA_BASE_URL: http://ollama:11434
+    volumes: ["csvrescue-data:/data"]
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["ollama"]
+    ports: ["11434:11434"]
+    volumes: ["ollama-models:/root/.ollama"]
+volumes:
+  csvrescue-data: {}
+  ollama-models: {}

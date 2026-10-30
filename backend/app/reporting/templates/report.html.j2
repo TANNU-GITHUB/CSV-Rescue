@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CSV Rescue report — {{ filename }}</title>
+<style>
+  body { font-family: Nunito, ui-rounded, sans-serif; background:#F8F3FA; color:#2B2766; margin:24px; }
+  h1 { font-size:28px; } .banner { padding:16px 24px; border-radius:20px; }
+  .clean { background:#DDF3E6; } .improved { background:#FDF0C9; } .other { background:#FADADF; }
+  table { border-collapse: collapse; width:100%; background:#FCF9FC; border-radius:16px; overflow:hidden; }
+  th { background:#F1EBFC; text-align:left; padding:8px 12px; } td { padding:8px 12px; border-top:1px solid rgba(124,99,217,.12); }
+</style>
+</head>
+<body>
+<h1>CSV Rescue quality report</h1>
+<p>{{ filename }} · generated {{ generated_at }} · v{{ version }}</p>
+<div class="banner {{ verdict_class }}">Verdict: <strong>{{ verdict_label }}</strong></div>
+<h2>Before → after</h2>
+<table>
+<tr><th></th><th>Before</th><th>After</th></tr>
+<tr><td>Quality score</td><td>{{ before.quality_score }}</td><td>{{ after.quality_score }}</td></tr>
+<tr><td>Open findings</td><td>{{ before.open_findings }}</td><td>{{ after.open_findings }}</td></tr>
+<tr><td>Rows</td><td>{{ before.rows }}</td><td>{{ after.rows }}</td></tr>
+</table>
+<h2>Issues (detected ≠ corrected)</h2>
+<table>
+<tr><th>Type</th><th>Detected</th><th>Resolved</th><th>Dismissed</th><th>Remaining</th><th>New</th></tr>
+{% for t in by_type %}
+<tr><td>{{ t.type }}</td><td>{{ t.before }}</td><td>{{ t.resolved }}</td><td>{{ t.dismissed }}</td><td>{{ t.remaining }}</td><td>{{ t.new }}</td></tr>
+{% endfor %}
+</table>
+<p>Resolved = you changed the data and the check now passes. Dismissed = you reviewed it and decided it is valid.</p>
+<h2>Methodology</h2>
+<p>Outliers are suspicious values, not necessarily errors. Detection uses IQR fences plus robust z-scores. Dates assume day-first unless a value proves otherwise.</p>
+</body>
+</html>

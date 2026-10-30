@@ -1,0 +1,146 @@
+[
+  {
+    "id": "blank_age",
+    "type": "missing_value",
+    "rid": 10,
+    "column": "Age",
+    "clean_value": "18",
+    "dirty_value": "",
+    "correct_fix": "leave_or_fill"
+  },
+  {
+    "id": "age_twenty",
+    "type": "invalid_numeric",
+    "rid": 11,
+    "column": "Age",
+    "clean_value": "20",
+    "dirty_value": "twenty",
+    "correct_fix": "20"
+  },
+  {
+    "id": "age_nineteen",
+    "type": "invalid_numeric",
+    "rid": 12,
+    "column": "Age",
+    "clean_value": "19",
+    "dirty_value": "nineteen",
+    "correct_fix": "19"
+  },
+  {
+    "id": "ws_city",
+    "type": "inconsistent_text",
+    "rid": 13,
+    "column": "City",
+    "clean_value": "Jaipur",
+    "dirty_value": " Jaipur ",
+    "correct_fix": "Jaipur"
+  },
+  {
+    "id": "case_city",
+    "type": "inconsistent_text",
+    "rid": 14,
+    "column": "City",
+    "clean_value": "Jaipur",
+    "dirty_value": "jaipur",
+    "correct_fix": "Jaipur"
+  },
+  {
+    "id": "typo_city",
+    "type": "inconsistent_text",
+    "rid": 16,
+    "column": "City",
+    "clean_value": "Jaipur",
+    "dirty_value": "Japur",
+    "correct_fix": "review"
+  },
+  {
+    "id": "na_age",
+    "type": "missing_value",
+    "rid": 20,
+    "column": "Age",
+    "clean_value": "",
+    "dirty_value": "N/A",
+    "correct_fix": "blank"
+  },
+  {
+    "id": "date_iso",
+    "type": "inconsistent_format",
+    "rid": 30,
+    "column": "Enrollment_Date",
+    "clean_value": "2024-10-25",
+    "dirty_value": "2024-10-25",
+    "correct_fix": "standardize"
+  },
+  {
+    "id": "marks_over",
+    "type": "invalid_value",
+    "rid": 40,
+    "column": "Math",
+    "clean_value": "",
+    "dirty_value": "105",
+    "correct_fix": "rule"
+  },
+  {
+    "id": "age_outlier",
+    "type": "outlier",
+    "rid": 41,
+    "column": "Age",
+    "clean_value": "212",
+    "dirty_value": "212",
+    "correct_fix": "keep"
+  },
+  {
+    "id": "total_mismatch",
+    "type": "invalid_value",
+    "rid": 50,
+    "column": "Total_Marks",
+    "clean_value": "235",
+    "dirty_value": "250",
+    "correct_fix": "recompute"
+  },
+  {
+    "id": "grad_before",
+    "type": "invalid_value",
+    "rid": 51,
+    "column": "Graduation_Date",
+    "clean_value": "15/05/2026",
+    "dirty_value": "01/01/2024",
+    "correct_fix": "review"
+  },
+  {
+    "id": "bad_email",
+    "type": "invalid_value",
+    "rid": 52,
+    "column": "Email",
+    "clean_value": "leela52@school.edu",
+    "dirty_value": "not-an-email",
+    "correct_fix": "review"
+  },
+  {
+    "id": "sci_outlier",
+    "type": "outlier",
+    "rid": 53,
+    "column": "Science",
+    "clean_value": "9999",
+    "dirty_value": "9999",
+    "correct_fix": "keep"
+  },
+  {
+    "id": "dup_id",
+    "type": "duplicate_id",
+    "rid": 60,
+    "column": "Student_ID",
+    "clean_value": "S0060",
+    "dirty_value": "S0001",
+    "correct_fix": "review"
+  },
+  {
+    "id": "dup_row",
+    "type": "duplicate_row",
+    "rid": 600,
+    "column": "*",
+    "clean_value": "",
+    "dirty_value": "copy",
+    "correct_fix": "delete"
+  }
+]

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0;
+  font-family: Nunito, ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  background:
+    radial-gradient(1100px 600px at 8% -5%, #EDE5FB 0%, transparent 60%),
+    linear-gradient(160deg, var(--bg-page-1) 0%, var(--bg-page-2) 52%, var(--bg-page-3) 100%);
+  background-attachment: fixed;
+  color: var(--ink);
+}
+button, input, select { font-family: inherit; }
+:focus-visible { outline: none; box-shadow: var(--focus); }
+.tabular { font-variant-numeric: tabular-nums; }
+
+@layer components {
+  .clay-card {
+    background: var(--card);
+    border-radius: var(--r-card);
+    box-shadow: var(--sh-card);
+    border: 1px solid rgba(255,255,255,.7);
+    padding: 24px;
+  }
+  .clay-tint {
+    border-radius: var(--r-card);
+    box-shadow: var(--sh-tint);
+    padding: 20px 22px;
+  }
+}

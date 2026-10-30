@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: csv-rescue
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/v1/health
+    autoDeploy: true
+    envVars:
+      - { key: GROQ_API_KEY, sync: false }
+      - { key: GROQ_MODEL, value: llama-3.3-70b-versatile }
+      - { key: LLM_PROVIDER_ORDER, value: "groq,ollama" }
+      - { key: OLLAMA_BASE_URL, value: "" }
+      - { key: DATA_DIR, value: /tmp/csvrescue-data }
+      - { key: FRONTEND_ORIGIN, value: "https://csv-rescue.onrender.com" }
+      - { key: MAX_UPLOAD_MB, value: "25" }
+      - { key: SESSION_TTL_HOURS, value: "24" }

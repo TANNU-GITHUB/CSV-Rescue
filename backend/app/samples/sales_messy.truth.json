@@ -1,0 +1,83 @@
+[
+  {
+    "id": "neg_qty",
+    "type": "invalid_value",
+    "rid": 7,
+    "column": "Quantity",
+    "clean_value": "3",
+    "dirty_value": "-3",
+    "correct_fix": "review"
+  },
+  {
+    "id": "qty_out",
+    "type": "outlier",
+    "rid": 8,
+    "column": "Quantity",
+    "clean_value": "100000",
+    "dirty_value": "100000",
+    "correct_fix": "keep"
+  },
+  {
+    "id": "bad_date",
+    "type": "invalid_value",
+    "rid": 9,
+    "column": "Order_Date",
+    "clean_value": "",
+    "dirty_value": "31/02/2026",
+    "correct_fix": "manual"
+  },
+  {
+    "id": "price_mismatch",
+    "type": "invalid_value",
+    "rid": 10,
+    "column": "Total_Price",
+    "clean_value": "8982",
+    "dirty_value": "9032",
+    "correct_fix": "recompute"
+  },
+  {
+    "id": "ship_before",
+    "type": "invalid_value",
+    "rid": 11,
+    "column": "Ship_Date",
+    "clean_value": "24/10/2026",
+    "dirty_value": "01/01/2026",
+    "correct_fix": "review"
+  },
+  {
+    "id": "currency",
+    "type": "inconsistent_format",
+    "rid": 12,
+    "column": "Unit_Price",
+    "clean_value": "1200",
+    "dirty_value": "\u20b91,200",
+    "correct_fix": "1200"
+  },
+  {
+    "id": "name_typo",
+    "type": "inconsistent_text",
+    "rid": 14,
+    "column": "Customer",
+    "clean_value": "Rahul Sharma",
+    "dirty_value": "Rahul Sharmaa",
+    "correct_fix": "review"
+  },
+  {
+    "id": "dup_order",
+    "type": "duplicate_id",
+    "rid": 17,
+    "column": "Order_ID",
+    "clean_value": "O00017",
+    "dirty_value": "O00001",
+    "correct_fix": "review"
+  },
+  {
+    "id": "blank_status",
+    "type": "missing_value",
+    "rid": 18,
+    "column": "Status",
+    "clean_value": "",
+    "dirty_value": "",
+    "correct_fix": "leave"
+  }
+]

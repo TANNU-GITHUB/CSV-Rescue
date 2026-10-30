@@ -1,0 +1,87 @@
+:root {
+  --bg-page-1: #C9BCEE;
+  --bg-page-2: #DDD2F5;
+  --bg-page-3: #CBBDF0;
+  --shell: #F8F3FA;
+  --shell-2: #F3ECF8;
+  --card: #FCF9FC;
+  --card-edge: #FFFFFF;
+
+  --purple-50:  #F1EBFC;
+  --purple-100: #E7DDF7;
+  --purple-200: #D3C4F3;
+  --purple-300: #BDAEF0;
+  --purple-400: #A996E8;
+  --purple-500: #9783E0;
+  --purple-600: #7C63D9;
+  --purple-700: #6A50C8;
+  --sidebar-top: #A38FE8;
+  --sidebar-bottom: #8B75D6;
+
+  --ink: #2B2766;
+  --ink-2: #4A4580;
+  --muted: #5B5690;
+  --muted-2: #8C87B3;
+
+  --tint-lavender: #E8DEF7;
+  --tint-pink: #FADADB;
+  --tint-yellow: #FBEFC6;
+  --tint-blue: #DCE6F6;
+  --tint-mint: #D9F0E3;
+  --tint-peach: #FBE3CF;
+
+  --badge-purple: linear-gradient(145deg, #A98BFF 0%, #6E52D4 100%);
+  --badge-coral:  linear-gradient(145deg, #FF8C9A 0%, #E8455F 100%);
+  --badge-amber:  linear-gradient(145deg, #FFD966 0%, #F5A524 100%);
+  --badge-blue:   linear-gradient(145deg, #7DB4FF 0%, #3F7BE6 100%);
+  --badge-mint:   linear-gradient(145deg, #7FE0A8 0%, #2FB36D 100%);
+  --badge-pink:   linear-gradient(145deg, #FF9CC2 0%, #E8508F 100%);
+
+  --c1: #A48BE9;
+  --c2: #F5A9C4;
+  --c3: #F9AE57;
+  --c4: #F9D56E;
+  --c5: #A4D27C;
+  --c6: #86B6EE;
+  --c7: #B9A5F0;
+  --c8: #F4B6A6;
+
+  --success: #2A8F4F;
+  --success-bg: #DDF3E6;
+  --warning: #B7791F;
+  --warning-bg: #FDF0C9;
+  --danger: #D23B5B;
+  --danger-bg: #FADADF;
+  --info: #3F6FD1;
+  --info-bg: #DCE6F6;
+
+  --promo-1: #F8CDD6;
+  --promo-2: #F3B5C6;
+  --promo-btn: #EC6A93;
+
+  --diff-before: #FDE3E6;
+  --diff-before-ink: #9B2C45;
+  --diff-after: #DDF3E6;
+  --diff-after-ink: #1F6B3B;
+  --diff-flag: #FDF0C9;
+
+  --r-shell: 44px;
+  --r-sidebar: 36px;
+  --r-card: 28px;
+  --r-inner: 20px;
+  --r-badge: 18px;
+  --r-pill: 999px;
+
+  --sh-shell: 0 40px 90px rgba(98,70,170,.30), inset 0 3px 0 rgba(255,255,255,.85);
+  --sh-sidebar: 0 26px 50px rgba(98,70,170,.38), inset 0 3px 0 rgba(255,255,255,.35), inset 0 -12px 26px rgba(70,45,150,.28);
+  --sh-card: 0 14px 34px rgba(124,99,217,.14), inset 0 2px 0 rgba(255,255,255,.95), inset 0 -5px 12px rgba(124,99,217,.06);
+  --sh-card-hover: 0 22px 46px rgba(124,99,217,.22), inset 0 2px 0 rgba(255,255,255,.95), inset 0 -5px 12px rgba(124,99,217,.08);
+  --sh-tint: 0 12px 26px rgba(124,99,217,.14), inset 0 2px 0 rgba(255,255,255,.8), inset 0 -6px 14px rgba(124,99,217,.08);
+  --sh-btn: 0 12px 22px rgba(98,70,190,.40), inset 0 2px 0 rgba(255,255,255,.35), inset 0 -5px 10px rgba(50,28,130,.28);
+  --sh-btn-light: 0 10px 20px rgba(98,70,190,.20), inset 0 2px 0 rgba(255,255,255,.9);
+  --sh-pill-active: 0 12px 24px rgba(60,38,140,.30), inset 0 2px 0 rgba(255,255,255,.95);
+  --sh-badge: 0 10px 18px rgba(40,20,100,.20), inset 0 2px 0 rgba(255,255,255,.55), inset 0 -4px 8px rgba(0,0,0,.14);
+  --sh-field: inset 0 3px 8px rgba(124,99,217,.14), 0 1px 0 #fff;
+
+  --focus: 0 0 0 4px rgba(124,99,217,.45);
+}
